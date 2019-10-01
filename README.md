@@ -7,3 +7,5 @@ The code can be run fron the command line using the command ***python RulesEngin
 - 2: rule condition input (value of property that triggers rule)
 - 3: rule action (adjustment made to a specific property when rule fires)
 - 4: rule description (text description of rule)
+
+All classes are defined in RulesEngine.py, while rules are declared as rows in Rule_definitions.txt, which can be updated. Several tests have been included in the RulesEngine.py file to handle expected uses and incorrect inputs.
