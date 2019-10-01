@@ -1,18 +1,23 @@
 # Rules_Engine_Example
 
+## Overview
 This project includes an implementation of a simple rule engine that determines whether a person qualifies for a given product and sets an interest rate for the person based on predefined rules. The rulebase is designed to be easily updated, with rules defined and implemented separately from the code that executes them.
 
-The code is written in Python (Python 3) and can be run fron the command line using the command ***python RulesEngine.py***. The rules are declared as rows in a csv file with the columns defined as follows:
+## Contents
+The rules are declared as rows in a csv file with the columns defined as follows:
 - 1: rule index (unique identifier)
 - 2: rule condition input (value of property that triggers rule)
 - 3: rule action (adjustment made to a specific property when rule fires)
 - 4: rule description (text description of rule)
 
-All classes are defined in RulesEngine.py, while rules are declared as rows in Rule_definitions.txt, which can be updated. Several tests have been included in the RulesEngine.py file to handle expected uses and incorrect inputs.
+All classes are defined in RulesEngine.py, while rules are declared as rows in ***Rule_definitions.txt***, which can be updated. Several tests have been included in the RulesEngine.py file to handle expected uses and incorrect inputs.
 
-# Problem Statement
+## Instructions
+The code is written in Python (Python 3) and can be run fron the command line using the command ***python RulesEngine.py***. 
 
-You have been tasked by a stakeholder  to develop a solution that allows the business to dynamically generating product pricing from a set rules defined by the finance team. The finance team has given you an initial set of rules on how to price the products, however, these rules could change at any time so we need to be able to update the rules easily and rerun the product pricing to see the new prices of the products. 
+## Problem Statement
+
+You have been tasked by a stakeholder to develop a solution that allows the business to dynamically generating product pricing from a set rules defined by the finance team. The finance team has given you an initial set of rules on how to price the products, however, these rules could change at any time so we need to be able to update the rules easily and rerun the product pricing to see the new prices of the products. 
  
 Initial Rules: 
  
@@ -58,7 +63,7 @@ product.interest_rate == 5.2 ( 5.0 - .3 + .5 )
 product.disqualified == true  
 ```
 
-# Expectations: 
+## Expectations: 
  
 1. Build a rules engine to accomplish what the business has asked above. 
  
