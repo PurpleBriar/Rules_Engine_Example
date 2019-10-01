@@ -27,7 +27,7 @@ If the person has a credit score lower than 720 we increase the interest_rate on
 If the name of the product is “7-1 ARM” then we need to add .5 to the interest_rate of the product. 
  
 Example:   
-***
+```
 class Person:   
   credit_score: integer   
   state: string     
@@ -46,16 +46,17 @@ rules_engine = new RulesEngine()
  
 rules = loadRules() // Rules are loaded at runtime!     
 
-rules_engine.runRules(person, product, rules**); ***
+rules_engine.runRules(person, product, rules**); 
+```
  
 **Hint: We have not defined how the rules are represented, they could be json, csv, etc. The only thing that matters is that rule definitions can be extended upon and defined outside of the code, the rule definitions should define an action, any parameters an action needs, and under what condition to execute the action. 
  
 The output of the above code example should be: 
-*** 
+``` 
 product.interest_rate == 5.2 ( 5.0 - .3 + .5 ) 
  
 product.disqualified == true  
-***
+```
 
 # Expectations: 
  
