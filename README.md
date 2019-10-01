@@ -39,8 +39,8 @@ class Product:
   
 class RulesEngine   
   def runRules(person, product, rules)     
-  person = new Person(720, ‘Florida’)     
-  product = new Product(‘7-1 ARM’, 5.0) 
+    person = new Person(720, ‘Florida’)     
+    product = new Product(‘7-1 ARM’, 5.0) 
   
 rules_engine = new RulesEngine() 
  
