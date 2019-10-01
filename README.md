@@ -10,7 +10,7 @@ The rules are declared as rows in a csv file with the columns defined as follows
 - 3: rule action (adjustment made to a specific property when rule fires)
 - 4: rule description (text description of rule)
 
-All classes are defined in RulesEngine.py, while rules are declared as rows in ***Rule_definitions.txt***, which can be updated. Several tests have been included in the RulesEngine.py file to handle expected uses and incorrect inputs.
+All classes are defined in ***RulesEngine.py***, while rules are declared as rows in ***Rule_definitions.txt***, which can be easily updated without updating the rule execution code. Several tests have been included in the ***RulesEngine.py*** file to handle expected uses and incorrect inputs.
 
 ## Instructions
 The code is written in Python (Python 3) and can be run fron the command line using the command ***python RulesEngine.py***. 
@@ -21,15 +21,11 @@ You have been tasked by a stakeholder to develop a solution that allows the busi
  
 Initial Rules: 
  
-All products start at 5.0 interest_rate. 
- 
-If the person lives in Florida (condition), we do not offer the product to them and the product is to be disqualified (action). 
- 
-If the person has a credit score greater than or equal to 720(condition) then we reduce the interest_rate on the product by .3 (action that has an input of “.3”, remember the business may decide in the future they want to reduce it by .5). 
- 
-If the person has a credit score lower than 720 we increase the interest_rate on the product by .5. 
- 
-If the name of the product is “7-1 ARM” then we need to add .5 to the interest_rate of the product. 
+- All products start at 5.0 interest_rate. 
+- If the person lives in Florida (condition), we do not offer the product to them and the product is to be disqualified (action). 
+- If the person has a credit score greater than or equal to 720(condition) then we reduce the interest_rate on the product by .3 (action that has an input of “.3”, remember the business may decide in the future they want to reduce it by .5). 
+- If the person has a credit score lower than 720 we increase the interest_rate on the product by .5. 
+- If the name of the product is “7-1 ARM” then we need to add .5 to the interest_rate of the product. 
  
 Example:   
 ```
